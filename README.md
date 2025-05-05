@@ -85,7 +85,7 @@ For both models, performance was evaluated using:
 
 ### Linear Regression Findings
 
-The linear regression model achieved an R² of approximately 0.40, indicating that about 40% of the variation in wine quality can be explained by the measured chemical properties. The most significant predictors were:
+The linear regression model achieved an R² of approximately 0.35, indicating that about 35% of the variation in wine quality can be explained by the measured chemical properties. The most significant predictors were:
 
 1. **Alcohol content** (positive coefficient): Each percentage point increase in alcohol was associated with approximately a 0.25-point increase in quality rating, holding other variables constant.
 
@@ -101,15 +101,14 @@ The Random Forest model outperformed the linear regression, achieving an R² of 
 
 Feature importance analysis from the Random Forest model revealed:
 
-1. **Alcohol content** (21.4% importance): Confirmed as the most important predictor of wine quality.
+1. **Alcohol content** (27.04% importance): Confirmed as the most important predictor of wine quality.
 
-2. **Volatile acidity** (15.3% importance): Second most important feature, with higher levels associated with lower quality.
+2. **Sulphates** (12.7% importance): Second most important feature, positively associated with quality.
 
-3. **Sulphates** (12.7% importance): Third most important feature, positively associated with quality.
+3. **Volatile acidity** (14.8% importance): Third most important feature, with higher levels associated with lower quality.
 
-4. **Total sulfur dioxide** (9.5% importance): Showed non-linear effects on quality that weren't fully captured by the linear model.
+5. **Total sulfur dioxide** (7.7% importance): Showed non-linear effects on quality that weren't fully captured by the linear model.
 
-5. **Density** (8.8% importance): Showed complex relationships with quality, likely related to its connection with alcohol and sugar content.
 
 These findings largely align with expert wine knowledge, where alcohol content contributes to body and mouthfeel, while volatile acidity (vinegar notes) is generally considered a fault at high levels.
 
